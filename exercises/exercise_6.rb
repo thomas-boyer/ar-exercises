@@ -15,11 +15,3 @@ puts "----------"
 @store2.employees.create(first_name: "Julianne", last_name: "Moore", hourly_rate: 70)
 @store2.employees.create(first_name: "Isabelle", last_name: "Huppert", hourly_rate: 50)
 @store2.employees.create(first_name: "Nicolas", last_name: "Cage", hourly_rate: 20)
-
-Store.find(@store1.id).employees.each do |employee|
-  puts "#{employee.first_name} #{employee.last_name}"
-end
-
-Store.find(@store2.id).employees.each do |employee|
-  puts "#{employee.first_name} #{employee.last_name}"
-end
